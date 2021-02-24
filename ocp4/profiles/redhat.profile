@@ -225,4 +225,7 @@ selections:
     - general_configure_imagepolicywebhook
 
    # 6 Redhat Custom Rules
+   # First test rule
     - redhat_encryption_provider_config_test
+   # Check that kubeadmin is deleted
+    - redhat_remove_kubeadmin
