@@ -223,3 +223,6 @@ selections:
   #### 5.5 Extensible Admission Control
   # 5.5.1 Configure Image Provenance using ImagePolicyWebhook admission controller
     - general_configure_imagepolicywebhook
+
+   # 6 Redhat Custom Rules
+    - redhat_encryption_provider_config_test
