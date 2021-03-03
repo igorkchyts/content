@@ -2,7 +2,7 @@ documentation_complete: true
 
 prodtype: ocp4
 
-title: 'Ensure kubeadmin user does not exists'
+title: 'Ensure kubeadmin user does not exists - 2'
 
 description: |-
   Remove default user 'kubeadmin' with cluster-admin role to improve security
@@ -25,9 +25,7 @@ template:
   name: yamlfile_value
   vars:
     filepath: /api/v1/namespaces/kube-system/secrets/kubeadmin
-    entity_check: "at least one"
-    yamlpath: ".data"
+    yamlpath: ".type"
     values:
-    - key: "kubeadmin"
-      value: ".*"
-      operation: "pattern match"
+    - value: 'Opaque'
+      type: "string"

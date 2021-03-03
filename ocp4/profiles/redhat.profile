@@ -1,6 +1,6 @@
 documentation_complete: true
 
-title: 'CIS Red Hat OpenShift Container Platform 4 Benchmark'
+title: 'CIS Red Hat OpenShift Container Platform 4 Benchmark - RedHat'
 
 platform: ocp4
 
@@ -154,6 +154,8 @@ selections:
   #### 3.1 Authentication and Authorization
   # 3.1.1 Client certificate authentication should not be used for users
     - idp_is_configured
+  # 3.1.2 Do Not Use htpasswd-based Authentication
+    - ocp_idp_no_htpasswd
   #### 3.2 Logging
   # 3.2.1 Ensure that a minimal audit policy is created
   # 3.2.2 Ensure that the audit policy covers key security concerns
@@ -229,3 +231,6 @@ selections:
     - redhat_encryption_provider_config_test
    # Check that kubeadmin is deleted
     - redhat_remove_kubeadmin
+    - redhat_remove_kubeadmin_2
+   # Testing rule changes
+    - redhat_insecure_port_disabled
