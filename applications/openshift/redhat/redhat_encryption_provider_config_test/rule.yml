@@ -26,8 +26,6 @@ rationale: |-
 
 severity: medium
 
-
-
 ocil_clause: '<tt>aescbc</tt> is not set as the encryption type for etcd.'
 
 ocil: |-
