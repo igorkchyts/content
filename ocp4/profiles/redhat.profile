@@ -232,5 +232,6 @@ selections:
    # Check that kubeadmin is deleted
     - redhat_remove_kubeadmin
     - redhat_remove_kubeadmin_2
+    - redhat_remove_kubeadmin_3
    # Testing rule changes
     - redhat_insecure_port_disabled
