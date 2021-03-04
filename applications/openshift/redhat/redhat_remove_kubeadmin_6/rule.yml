@@ -1,0 +1,32 @@
+documentation_complete: true
+
+prodtype: ocp4
+
+title: 'Ensure kubeadmin user does not exists - 2'
+
+description: |-
+  Remove default user 'kubeadmin' with cluster-admin role to improve security
+
+rationale: |-
+  kubeadmin is a general user with cluster-admin permissions used for initial
+  cluster login and configuration after deployment. IDP should be configured then
+  and a new cluster-admin users or group should be created.
+
+severity: high
+
+ocil_clause: 'kubeadmin is removed'
+
+ocil: |-
+  To verify that kubeadmin user is removed, run the following command:
+  <pre>$ oc get secrets kubeadmin -n kube-system</pre>
+  The output should be empty, no such secret exists.
+
+template:
+  name: yamlfile_value
+  vars:
+    ocp_data: "true"
+    filepath: /api/v1/namespaces/kube-system/secrets/kubeadmin
+    yamlpath: ".type"
+    values:
+    - value: 'Opaque'
+      entity_check: "at least one"
