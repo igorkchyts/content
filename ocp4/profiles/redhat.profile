@@ -233,5 +233,10 @@ selections:
     - redhat_remove_kubeadmin
     - redhat_remove_kubeadmin_2
     - redhat_remove_kubeadmin_3
+    - redhat_remove_kubeadmin_4
+    - redhat_remove_kubeadmin_5
+    - redhat_remove_kubeadmin_6
+    - redhat_remove_kubeadmin_7
+    - redhat_remove_kubeadmin_8
    # Testing rule changes
     - redhat_insecure_port_disabled
