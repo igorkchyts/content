@@ -16,7 +16,7 @@ severity: medium
 template:
   name: yamlfile_value
   vars:
-    filepath: '/api/v1/namespaces/default/configmap/compliance-check'
+    filepath: '/api/v1/namespaces/default/configmaps/compliance-check'
     yamlpath: '.data.test'
     values:
       - value: 'success'
