@@ -240,3 +240,5 @@ selections:
     - redhat_remove_kubeadmin_8
    # Testing rule changes
     - redhat_insecure_port_disabled
+    - redhat_check_configmap
+    - redhat_check_configmap_1

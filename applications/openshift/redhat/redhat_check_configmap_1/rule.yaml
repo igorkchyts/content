@@ -1,0 +1,23 @@
+documentation_complete: true
+
+prodtype: ocp4
+
+title: 'Check config map test value - namespace default'
+
+description: |-
+  Checking config map value for test
+
+rationale: |-
+  Checking config map value for test
+
+severity: medium
+
+
+template:
+  name: yamlfile_value
+  vars:
+    filepath: '/api/v1/namespaces/default/configmap/compliance-check'
+    yamlpath: '.data.test'
+    values:
+      - value: 'success'
+        type: "string"
