@@ -39,12 +39,12 @@ ocil: |-
 #            to read secrets from openshift-apiserver
 #            - checking for the type should be enough as the type enforces the required
 #              keys
-# template:
-#     name: yamlfile_value
-#     vars:
-#         ocp_data: "true"
-#         filepath: '/api/v1/namespaces/openshift-apiserver/secrets/serving-cert'
-#         yamlpath: '.type'
-#         values:
-#             - value: 'kubernetes.io/tls'
-#               type: "string"
+template:
+    name: yamlfile_value
+    vars:
+        ocp_data: "true"
+        filepath: '/api/v1/namespaces/openshift-apiserver/secrets/serving-cert'
+        yamlpath: '.type'
+        values:
+            - value: 'kubernetes.io/tls'
+              type: "string"
