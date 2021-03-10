@@ -19,7 +19,8 @@ template:
     filepath: '/api/v1/namespaces/default/configmaps/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
-      - value: ".*"
+      - value: "JDJhJDEwJHNuTkI2LlRFSWxZVlNOM1VhMGhjUy55RWdJamh0aW5oYlI2R1FNdklJaXVOS0NCUWZEbndp"
+        type: "string"
 
 
 #template:
