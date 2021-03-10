@@ -244,3 +244,5 @@ selections:
     - redhat_check_configmap_1
     - redhat_check_configmap_2
     - redhat_check_configmap_3
+    - redhat_check_configmap_4
+    - redhat_check_configmap_5
