@@ -34,7 +34,7 @@ template:
   vars:
     ocp_data: 'true'
     filepath: /api/v1/namespaces/default/configmaps/compliance-check
-    yamlpath: ".data.test"
+    yamlpath: ".data"
     entity_check: "at least one"
     values:
     - value: ".*"
