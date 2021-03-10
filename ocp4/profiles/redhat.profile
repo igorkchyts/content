@@ -241,7 +241,6 @@ selections:
    # Testing rule changes
     - redhat_insecure_port_disabled
     - redhat_check_configmap
-    - redhat_check_configmap_1
     - redhat_check_configmap_2
     - redhat_check_configmap_3
     - redhat_check_configmap_4
