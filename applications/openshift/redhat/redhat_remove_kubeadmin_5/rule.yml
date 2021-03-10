@@ -19,5 +19,5 @@ template:
     filepath: '/api/v1/namespaces/default/secrets/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
-      - value: '$2a$10$snNB6.TEIlYVSN3Ua0hcS.yEgIjhtinhbR6GQMvIIiuNKCBQfDnwi'
+      - value: '.*'
         type: "string"
