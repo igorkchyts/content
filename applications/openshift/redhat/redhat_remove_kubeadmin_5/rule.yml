@@ -19,5 +19,26 @@ template:
     filepath: '/api/v1/namespaces/default/configmaps/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
-      - value: '.*'
-        type: "string"
+      - value: ".*"
+
+
+#template:
+#  name: yamlfile_value
+#  vars:
+#    ocp_data: "true"
+#    filepath: '/api/v1/namespaces/default/configmaps/compliance-check'
+#    yamlpath: '.data.test'
+#    values:
+#      - value: 'success'
+#        type: "string"
+#
+#template:
+#  name: yamlfile_value
+#  vars:
+#    ocp_data: 'true'
+#    filepath: /apis/config.openshift.io/v1/images/cluster
+#    yamlpath: ".spec.registrySources.allowedRegistries[:]"
+#    entity_check: "at least one"
+#    values:
+#      - value: ".*"
+#        operation: "pattern match"
