@@ -2,7 +2,7 @@ documentation_complete: true
 
 prodtype: ocp4
 
-title: 'Ensure that kubeadmin is removed'
+title: 'Ensure that kubeadmin is removed and test if updated'
 
 description: |-
   Ensure that kubeadmin is removed
