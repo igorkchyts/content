@@ -36,7 +36,7 @@ template:
   name: yamlfile_value
   vars:
     entity_check: "at least one"
-    filepath: '/apis/v1/namespaces/default/configmaps/compliance-check'
+    filepath: '/api/v1/namespaces/default/configmaps/compliance-check'
     yamlpath: '.data.test'
     values:
       - value: 'success'
