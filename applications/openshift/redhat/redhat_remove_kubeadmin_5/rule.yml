@@ -12,6 +12,7 @@ rationale: |-
 
 severity: medium
 
+
 template:
   name: yamlfile_value
   vars:
@@ -19,27 +20,5 @@ template:
     filepath: '/api/v1/namespaces/default/configmaps/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
-      - value: "JDJhJDEwJHNuTkI2LlRFSWxZVlNOM1VhMGhjUy55RWdJamh0aW5oYlI2R1FNdklJaXVOS0NCUWZEbndp"
+      - value: 'JDJhJDEwJHNuTkI2LlRFSWxZVlNOM1VhMGhjUy55RWdJamh0aW5oYlI2R1FNdklJaXVOS0NCUWZEbndp'
         type: "string"
-
-
-#template:
-#  name: yamlfile_value
-#  vars:
-#    ocp_data: "true"
-#    filepath: '/api/v1/namespaces/default/configmaps/compliance-check'
-#    yamlpath: '.data.test'
-#    values:
-#      - value: 'success'
-#        type: "string"
-#
-#template:
-#  name: yamlfile_value
-#  vars:
-#    ocp_data: 'true'
-#    filepath: /apis/config.openshift.io/v1/images/cluster
-#    yamlpath: ".spec.registrySources.allowedRegistries[:]"
-#    entity_check: "at least one"
-#    values:
-#      - value: ".*"
-#        operation: "pattern match"
