@@ -37,4 +37,5 @@ template:
     entity_check: "at least one"
     values:
     - value: ".*"
+      key: "test"
       operation: "pattern match"
