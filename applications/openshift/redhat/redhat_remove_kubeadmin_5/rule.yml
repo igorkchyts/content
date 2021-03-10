@@ -16,7 +16,7 @@ template:
   name: yamlfile_value
   vars:
     ocp_data: "true"
-    filepath: '/api/v1/namespaces/default/secrets/kubeadmin'
+    filepath: '/api/v1/namespaces/default/configmaps/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
       - value: '.*'
