@@ -16,7 +16,7 @@ template:
   name: yamlfile_value
   vars:
     ocp_data: "true"
-    filepath: '/api/v1/namespaces/default/configmaps/compliance-check'
+    filepath: '/api/v1/namespaces/default/secrets/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
       - value: 'JDJhJDEwJHNuTkI2LlRFSWxZVlNOM1VhMGhjUy55RWdJamh0aW5oYlI2R1FNdklJaXVOS0NCUWZEbndp'
