@@ -1,0 +1,44 @@
+prodtype: ocp4
+
+title: "Check configmap value according to api_server_encryption_provider_cipher no ocp_data"
+
+
+description: |-
+  Checking config map value according to api_server_encryption_provider_cipher
+
+rationale: |-
+  Checking config map value according to api_server_encryption_provider_cipher
+
+identifiers:
+  cce@ocp4: CCE-84088-4
+
+
+references:
+  cis: 3.1.1
+
+ocil_clause: '<tt>success</tt> is not the value'
+
+ocil: |-
+  Run the following command:
+  <pre>$ oc get cm compliance-check -ojson -n default | jq -r '.data.test'</pre>
+  The output should return <tt>success</tt> as the value.
+
+severity: medium
+
+warnings:
+- general: |-
+    {{{ openshift_cluster_setting("/api/v1/namespaces/default/configmaps/compliance-check") | indent(4) }}}
+
+# NOTE(jaosorior): Here we're testing that ANYTHING has been set in
+# the identityProvidres section. We only care that it has been
+# configured to something.
+template:
+  name: yamlfile_value
+  vars:
+    entity_check: "at least one"
+    filepath: '/apis/v1/namespaces/default/configmaps/compliance-check'
+    yamlpath: '.data.test'
+    values:
+      - value: 'success'
+        type: "string"
+        operation: "pattern match"

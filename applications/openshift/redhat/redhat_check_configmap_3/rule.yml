@@ -20,6 +20,13 @@ identifiers:
 references:
   cis: 3.1.1
 
+ocil_clause: '<tt>aescbc</tt> is not configured as the encryption provider'
+
+ocil: |-
+  Run the following command:
+  <pre>$ oc get apiserver cluster -ojson | jq -r '.spec.encryption.type'</pre>
+  The output should return <tt>aescdc</tt> as the encryption type.
+
 severity: medium
 
 warnings:
