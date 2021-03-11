@@ -2,7 +2,7 @@ documentation_complete: true
 
 prodtype: ocp4
 
-title: 'Ensure that kubeadmin is removed and test if updated'
+title: 'Ensure that kubeadmin is updated to success value'
 
 description: |-
   Ensure that kubeadmin is removed
@@ -20,5 +20,5 @@ template:
     filepath: '/api/v1/namespaces/default/configmaps/kubeadmin'
     yamlpath: '.data.kubeadmin'
     values:
-      - value: 'JDJhJDEwJHNuTkI2LlRFSWxZVlNOM1VhMGhjUy55RWdJamh0aW5oYlI2R1FNdklJaXVOS0NCUWZEbndp'
+      - value: 'success'
         type: "string"
